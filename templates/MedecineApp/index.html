@@ -11,7 +11,15 @@
 </head>
 <body>
  <h1>Bienvenue sur MedecineApp</h1>
- <p>RGVTBVTGVGVTVTVTVTV </p>
- <p> {{ message}} </p>
+ <h2 style="color: rgb(79, 141, 228);">Les medicaments</h2>
+    <ul>
+        {% for medicament in Medicament %}
+        <li style="font-size: 20px; color: black;">
+          {{medicament.nom_medicament }}
+          {{medicament.quantite }}
+          {{medicament.nom_pharmacie }}
+        </li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
