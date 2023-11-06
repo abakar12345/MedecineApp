@@ -7,7 +7,7 @@ from .models import Medicament
 
 def index(request):
     context={"Medicament": Medicament.objects.all()}
-    return render(request,'MedecineApp/index.html', context)
+    return render(request,'MedecineApp/Frontend/accueil.html', context)
 
 def get_medicament_by_id(id):
     return Medicament.objects.get(id_medicament=id)
